@@ -2,16 +2,20 @@ import styled from "styled-components";
 import { Card} from "react-bootstrap";
 
 export const NavBar = styled.div` 
- background-color:#2038d4;
+     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
     `
 export const ImgLogo = styled.img`
     width: 270px;
-    padding: 3rem;
+    padding: 2rem
 `
+export const LinkStyle = styled.a`
+    font-size: x-large
+`
+
+
 export const NavBarUl = styled.ul`
     display: flex;
     flex-direction: row;
@@ -69,7 +73,7 @@ background-color:#2038d4;
 ///Hero///
 
 export const HeroSection = styled.div` 
-background-color: #F4D03F;
+background-color: white;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% 50%;
@@ -117,99 +121,12 @@ export const Button = styled.button`
 export const Imag = styled.img`
     width:45%;
     `
-
-///Footer///
-
-export const FooterSocial = styled.div`
-  align-self: center;
-  margin: 35px 0;
-  color: white
-`
-export const Icon = styled.i`
-width: 30px;
-border: 1px solid white;
-border-radius: 50%;
-padding: 2px;
-border: solid 1px white;
-                
-                &:hover{
-                    color: #2038d4
-                }
-`
-export const Footer = styled.footer`
-    width: 100%;
-    padding: 5rem 1rem;
-    background-color: #F4D03F ;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    position: relative;
-    color: #2038d4
-
-    >img{
-        width: 80px;
-        position: absolute;
-        left: 7%;
-    }
-    >div{
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
- 
-        div, a{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-bottom: 15px;  
-            margin-left:30px;
-            &:hover{
-                    color: #2038d4
-                }
-        }
-        p, >a{
-            color: white;
-            text-decoration: none;
-            max-width: 300px;
-            margin-left: 15px;
-            &:hover{
-                    color: #2038d4
-                }
-        }
-        >a:hover{
-            font-weight: bold;
-        }
-    }
-    @media screen and (max-width:800px){
-        padding-top: 170px;
-        flex-direction: column;
-        img{
-            position: relative;
-        }
-        >div{
-            margin: 15px 5%;
-            &:last-child{
-                width:100%;
-                margin: 15px 0;
-                div{
-                    width: 100%;
-                    justify-content: center;
-                }
-            }
-        }
-    }
-`
 ///Reviews///
 
 export const Quotes = styled.section`
 width: 100%;
 padding: 90px;
-background-color: #2038d4;
+background-color: white;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -257,10 +174,10 @@ margin-top:5px;
 ///SecondCard///
   
 export const SecondSelect = styled.div`
-  width: 100%;
+    width: 100%;
     padding: 90px;
-    background-color: #F4D03F;
-    color:  #0a2998;;
+    background-color: #2038d4;
+    color:  white;;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -271,14 +188,14 @@ export const SecondSelect = styled.div`
       flex-direction: column;
     }  
     >img{
-        width: 35%;
+        width: 25%;
     margin: auto ;
     vertical-align: middle;
     margin-right:50px ;
     }
 `
 export const SecondLink = styled.a`
-color:  #0a2998;;
+color:  red;
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid hsl(176, 68%, 64%);
@@ -301,7 +218,7 @@ export const Form= styled.section`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
+    padding: 100px;
     background-color: #2038d4;
     >div{
         width: 800px;
@@ -316,9 +233,8 @@ export const Form= styled.section`
         border-radius: 1rem;
         box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5);
         position: relative;
-        bottom: -80px;
         z-index: 10;
-        max-width: 75vw;
+        max-width: 85vw;
         h3{
             font-family: "Raleway",sans-serif;
             font-weight: 700;

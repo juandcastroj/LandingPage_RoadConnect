@@ -17,7 +17,7 @@ const Hero = () => {
         anticipación, además de la posibilidad de compartir tu ubicación en
         tiempo real a tus contactos.
       </HeroDesc>
-      <Button>Empezar</Button>
+      <Button>Conócenos</Button>
     </HeroSection>
   );
 };

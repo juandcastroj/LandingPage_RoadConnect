@@ -1,41 +1,82 @@
 import React from 'react'
-import { Footer, FooterSocial, Icon } from '../styles/styles.jsx'
+import '../styles/styleFooter.css'
 
-const PageFooter = () => {
+const Footer = () => {
   return (
-    <Footer>
-        <img src='https://i.ibb.co/Gpbfykx/cicla.png' alt='' width="130px"/>
-        <div>
-            
-        </div>
-        <div>
-            <div>
-                <img  src="{phoneIcon}" alt="" />
-                <p>+57-322-123-4567</p>
-            </div>
-            <div>
-                <img src="{emailIcon} "alt=''/>
-                <p>bike@roadconnect.com</p>
-            </div>
-        </div>
-        <div>
-            <a href='#root'>About us</a>
-           
-        </div>
-        <div>
-            <a href='#root'>Contact us</a>
-       
-        </div>
-        <div>
+    <footer className="footer">
+      <div className="footer__addr">
+        <h1 className="footer__logo">Road Connect</h1>
+
+        <h2>Contacto</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br></br>
+
+          <a className="footer__btn" href="mailto:example@gmail.com">Escríbenos</a>
+        </address>
       </div>
-      <FooterSocial>
-        <Icon className="fab fa-facebook-f socials__icon"></Icon>
-        <Icon className="fab fa-twitter socials__icon"></Icon>
-        <Icon className="fab fa-instagram socials__icon"></Icon>
-      </FooterSocial>
-    
-    </Footer>
+
+      <ul className="footer__nav">
+        <li className="nav__item">
+          <h2 className="nav__title">Media</h2>
+
+          <ul className="nav__ul">
+            <li>
+              <a href="#home">Online</a>
+            </li>
+
+            <li>
+              <a href="#home">Print</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li className="nav__item nav__item--extra">
+          <h2 className="nav__title">Technologia</h2>
+
+          <ul className="nav__ul nav__ul--extra">
+            <li>
+              <a href="#home">Digital Signage</a>
+            </li>
+
+            <li>
+              <a href="#home">Automation</a>
+            </li>
+
+            <li>
+              <a href="#home">Artificial Intelligence</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li className="nav__item">
+          <h2 className="nav__title">Legal</h2>
+
+          <ul className="nav__ul">
+            <li>
+              <a href="#home">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#home">Terms of Use</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div className="legal">
+        <h6>&copy; 2022. All rights reserved.</h6>
+
+        <div className="legal__links">
+          <h6>Developed By: <br>
+          </br> Alejandra Moreno  <a href='https://mail.google.com/mail/u/0/#inbox' >aleja_5313@hotmail.com</a> <br></br>
+            Juan David Castro <a href='https://mail.google.com/mail/u/0/#inbox' >juandavid4130@gmail.com</a></h6>
+        </div>
+      </div>
+    </footer>
   )
 }
 
-export default PageFooter
+export default Footer
